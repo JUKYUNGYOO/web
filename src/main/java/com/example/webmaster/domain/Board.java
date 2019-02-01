@@ -1,6 +1,7 @@
 package com.example.webmaster.domain;
 
 
+import com.example.webmaster.domain.enums.BoardType;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,9 +15,10 @@ import java.time.LocalDateTime;
 @Entity
 @Table
 public class Board implements Serializable {
+
     @Id
     @Column
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private Long idx;
 
     @Column

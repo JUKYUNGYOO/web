@@ -1,4 +1,4 @@
-package com.example.webmaster.domain;
+package com.example.webmaster.domain.enums;
 
 
 public enum  BoardType {

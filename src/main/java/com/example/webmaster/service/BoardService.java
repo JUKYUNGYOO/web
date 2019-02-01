@@ -7,7 +7,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-
 @Service
 public class BoardService {
 
@@ -25,4 +24,5 @@ public class BoardService {
     public Board findBoardByIdx(Long idx) {
         return boardRepository.findById(idx).orElse(new Board());
     }
+
 }
